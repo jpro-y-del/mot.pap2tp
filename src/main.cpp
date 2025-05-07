@@ -1,18 +1,12 @@
 #include <Arduino.h>
+#include "lib.pap2.h"
 
-// put function declarations here:
-int myFunction(int, int);
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  MotorPaP_init(1,2,3,4);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+  MotorPaP(1,2,3,4,'N',30);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
